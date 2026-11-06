@@ -30,18 +30,18 @@ npm run report:open         # Open Allure HTML report
 
 | Metric | Result |
 |--------|--------|
-| **Total Tests** | 96 |
+| **Test Cases** | 32 |
+| **Test Runs** | 96 (32 tests × 3 Playwright projects) |
 | **Status** | ✅ All Passing |
-| **Browsers** | Chromium, Firefox, WebKit |
+| **Projects** | Chromium, Firefox, WebKit |
 | **Execution Time** | ~12-14 seconds |
 
 ### Test Breakdown
-- **Smoke Tests**: 24 tests
-- **Regression Tests**: 72 tests
-- **User API**: 12 tests
-- **Post API**: 24 tests
-- **Comments API**: 18 tests
-- **Advanced Patterns**: 22 tests
+- **Smoke Tests**: 12 tests (`@smoke`)
+- **Regression Tests**: 19 tests (`@regression`)
+- **User API**: 4 tests
+- **Post API** (GET/POST, PUT/PATCH, DELETE): 14 tests
+- **Comments API & Advanced Patterns**: 14 tests
 
 ## 📁 Project Structure
 
@@ -319,8 +319,8 @@ ENV=prod npm run test    # Production
 
 ## 🚀 Production Readiness
 
-✅ All 96 tests passing
-✅ Cross-browser testing (3 browsers)
+✅ All 32 tests passing (96 runs across 3 projects)
+✅ Runs in 3 Playwright projects (Chromium, Firefox, WebKit)
 ✅ Multi-environment support
 ✅ Comprehensive error handling
 ✅ Detailed logging and reporting
@@ -337,5 +337,5 @@ For detailed technical information, see **FRAMEWORK_DETAILS.md**
 ---
 
 **Status**: ✅ Production Ready  
-**Tests**: 96/96 Passing  
+**Tests**: 32 test cases, 96/96 runs passing  
 **Last Updated**: April 15, 2026
